@@ -11,6 +11,7 @@ import farmaciaRoutes from './routes/farmaciaRoutes.js';
 import mascotaRoutes from './routes/mascotaRoutes.js';
 import cardsRoutes from './routes/cardsRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
+import paymentRoutes from './routes/paymentRoutes.js';
 // import chatbotRoutes from './routes/chatbotRoutes.js';
 
 dotenv.config();
@@ -44,6 +45,7 @@ app.use('/api/mascota', mascotaRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/cards', cardsRoutes);
 app.use('/api/orders', orderRoutes);
+app.use('/api/payments', paymentRoutes);
 // app.use('/api/chats', chatbotRoutes);
 
 app.listen(PORT, () => {
